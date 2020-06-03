@@ -15,6 +15,7 @@ function cleanSheets(data) {
             counter++;
         }
     });
+    rowArray.push(tempRow);
     const header = rowArray.splice(0, 1)[0];
     const finalArray = rowArray.map(arr => {
         let data = {};
